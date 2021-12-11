@@ -1,14 +1,19 @@
-package Access_modifier;
+package com.company;
 
-public class A {
-	public void display() {
-		System.out.println("HI I am private");
-	}
-	protected void display2() {
-		System.out.println("Hi I am protected");
-	}
-	
-	void nothing() {
-		System.out.println("Default, We can only use in Same package");
-	}
+public class access_specifier {
+    public void display(){
+        System.out.println("Hi I am public");
+    }
+    private void display1(){
+        System.out.println("Hi i am private");
+    }
+    protected void display2(){
+        System.out.println("Hi, i am protected");
+    }
+    public static void main(String[] args) {
+    access_specifier obj=new access_specifier();
+    obj.display();
+    obj.display1();
+    obj.display2();
+    }
 }
